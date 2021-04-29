@@ -1,0 +1,18 @@
+<h2 style="text-align: center;">ADD CANDIDATE</h2>
+<form name="form" [formGroup] = "form" (ngSubmit) = "form.valid && onSubmit()">
+    <label>
+      <p class="label-txt">Enter Candidate Name</p>
+      <input type="text" class="input" formControlName = "candidateName" required="required">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    <label>
+      <p class="label-txt">Enter Candidate Party Name</p>
+      <input type="text" formControlName = "candidatePartyName" class="input" required = "required"> 
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    <button type="submit">Add</button>
+  </form>

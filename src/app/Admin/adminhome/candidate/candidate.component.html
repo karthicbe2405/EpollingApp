@@ -1,0 +1,12 @@
+<h2 style="text-align: center;">CANDIDATES</h2>
+<div class="row"> 
+    <div class="col-sm-3" *ngFor ="let candidate of this.candidates" style="padding: 10px;">
+      <div class="card text-center">
+        <div class="card-body">
+          <h5 class="card-title">Name : {{candidate.name}}</h5>
+          <p class="card-text">Party : {{candidate.partyName}}</p>
+          <a class="btn btn-primary">Votes : {{candidate.vote}}</a>
+        </div>
+      </div>
+    </div>
+  </div>

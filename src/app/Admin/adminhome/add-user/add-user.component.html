@@ -1,0 +1,18 @@
+<h2 style="text-align: center;">ADD USER</h2>
+<form name="form" [formGroup] = "form" (ngSubmit) = "form.valid && onSubmit()">
+    <label>
+      <p class="label-txt">Enter User Name</p>
+      <input type="text" class="input" formControlName = "userName" required="required">
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    <label>
+      <p class="label-txt">Enter User Password</p>
+      <input type="password" formControlName = "userPassword" class="input" required = "required"> 
+      <div class="line-box">
+        <div class="line"></div>
+      </div>
+    </label>
+    <button type="submit">Add</button>
+  </form>
